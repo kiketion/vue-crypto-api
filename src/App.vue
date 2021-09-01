@@ -27,7 +27,7 @@
               </span>
             </td>
             <td>
-              ${{ coin.current_price }}
+              ${{ coin.current_price.toLocaleString() }}
             </td>
             <td 
             :class="[
