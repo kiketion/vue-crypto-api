@@ -1,20 +1,36 @@
 <template>
-  <h1>HelloJack!</h1>
+  <div class="container">
+    <div class="row">
+      <h1>HelloJack!</h1>
 
-  <table>
-    <thead>
-      <tr>
-        <th>coin</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="coin in coins" :key="coin.id">
-        {{
-          coin.name
-        }}
-      </tr>
-    </tbody>
-  </table>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th v-for="title in titles" :key="title">
+              {{ title }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(coin, index) in coins" :key="coin.id">
+            <td class="text-muted">
+              {{ index + 1 }}
+            </td>
+            <td>
+              <img :src="coin.image" style="width: 2rem" class="mg-2" />
+              <span>
+                {{ coin.name }}
+              </span>
+
+              <span class="ms-2 text uppercase text-muted">
+                {{ coin.symbol }}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -23,6 +39,7 @@ export default {
   data() {
     return {
       coins: [],
+      titles: ['#', 'Coin', 'Price', 'Price Change', '24h Volume'],
     };
   },
 
