@@ -2,6 +2,8 @@
 
 Created to show you all how do i code from my ipad, and also to prove that i can manage modern javascript tecnologies like Vue; and some others technologies like the Crypto APIs and CSS Styled Frameworks like Bootstrap.
 
+The iPad App i Used in This Project Was Play.js. You can find it in the App Store
+
 ![ipad_img_Vue_crypto_api](/ipad_img_Vue_crypto_api.png "ipad_img_Vue_crypto_api")
 
 
